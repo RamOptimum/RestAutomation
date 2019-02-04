@@ -32,7 +32,7 @@ public class SpringBootTest {
 
 	@BeforeMethod
 	public void config() {
-		List<Object> providers = new ArrayList<>();
+		List<Object> providers = new ArrayList<Object>();
 		providers.add(new JacksonJsonProvider());
 
 		spring = JAXRSClientFactory.create("http://localhost:8080/", SpringBootInterface.class, providers);
