@@ -35,7 +35,7 @@ public class SpringBootTest {
 		List<Object> providers = new ArrayList<Object>();
 		providers.add(new JacksonJsonProvider());
 
-		spring = JAXRSClientFactory.create("http://localhost:9090/", SpringBootInterface.class, providers);
+		spring = JAXRSClientFactory.create("http://localhost:9090/spring-boot-app-0.0.1-SNAPSHOT/", SpringBootInterface.class, providers);
 		client = WebClient.client(spring);
 	}
 
